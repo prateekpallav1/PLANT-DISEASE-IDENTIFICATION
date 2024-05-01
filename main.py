@@ -3,9 +3,7 @@ import tensorflow as tf
 import numpy as np
 
 def open_homepage():
-    import webbrowser
-    url = "https://agri-smart.netlify.app"
-    webbrowser.open_new_tab(url)
+    st.link_button("Return", "https://agri-smart.netlify.app")
 
     
 def model_prediction(test_image):

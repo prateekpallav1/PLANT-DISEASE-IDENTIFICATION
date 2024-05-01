@@ -4,7 +4,9 @@ import numpy as np
 
 def open_homepage():
     import webbrowser
-    webbrowser.open_new_tab("C:/Users/prate/OneDrive/Desktop/AGRISMART/AgriSens-web-app/index.html")
+    url = "https://agri-smart.netlify.app"
+    webbrowser.open_new_tab(url)
+
     
 def model_prediction(test_image):
     model = tf.keras.models.load_model("trained_plant_disease_model.keras")
